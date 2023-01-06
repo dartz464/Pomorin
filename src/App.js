@@ -1,9 +1,12 @@
-// import './App.css';
+import './App.css';
+import Pomodoro from './section/Pomodoro.jsx';
+import Sobre from './section/Sobre.jsx';
 
 function App() {
   return (
     <div className="App">
-      <h1>Iniciando projeto</h1>
+        <Pomodoro/>
+        <Sobre/>
     </div>
   );
 }

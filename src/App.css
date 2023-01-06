@@ -1,0 +1,36 @@
+/* Definindo padrões */
+:root{
+    --primary-color: #282c34;
+    --secondary-color: #e1e4e8;
+    --emphasis-color: #e05454;
+    --emphasis-word-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--secondary-color);
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;   
+}
+
+/* Scroll */
+body{
+    overflow: overlay;
+}
+  
+::-webkit-scrollbar {
+    width: 10px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+  
