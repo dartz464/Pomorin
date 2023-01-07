@@ -1,40 +1,92 @@
+html{
+    background-color: var(--emphasis-color);
+}
+
 header{
-    height: 0;
-    position: sticky;
+    box-sizing: border-box;
+    height: 8vh;
     top: 0;
-    font-weight: bold;
-    letter-spacing: .1rem;
-}
-
-nav{
-    backdrop-filter: blur(.2rem);
-    border-bottom: solid 2px;
-    border-radius: 4px;
-    transition: transform 0.2s;
-
-}
-
-nav ul{
+    width: 100%;
+    position: sticky;
     display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--emphasis-color);
+    transition: transform 0.2s ease-in;
+}
+
+#logo{
+    color: var(--emphasis-word-color);
+    letter-spacing: .2rem;
+    z-index: 1;
+}
+
+#nav-bar{
+    width: 100%;
+}
+
+#menu{
+    width: 100%;
+    display: flex;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
     justify-content: space-evenly;
-    text-align: center;
-    max-width: 80%;
-    margin: 0 10% 0 10%;
 }
 
 li{
-    /* width: 100%; */
-    padding: 1rem 0 1rem 0;
+    padding: .8rem;
+    cursor: pointer;
     transition: transform 0.2s;
 }
 
-.li-hover:hover{
-    text-shadow: 0 0 10px white;
-    cursor: pointer;
+li:hover{
+    text-shadow: 0 0 10px var(--emphasis-word-color);
     transform: scale(1.1);
 }
 
-.hide{
+#btn-mobile{
+    display: none;
+}
+
+.header-active{
     transform: translateY(-101%);
 }
 
+@media (max-width: 768px) {
+    header{
+        height: 6vh;
+    }
+
+    #btn-mobile{
+        display: block;
+        width: 2rem;
+    }
+
+    #nav-bar{
+        width: auto;
+    }
+
+    #menu{
+        height: 20vh;
+        width: 100%;
+        left: 0;
+        top: 8vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--emphasis-color);
+        border-radius: 0 0 4px 4px;
+        transform: translateY(-150%);
+        overflow-y: hidden;
+        transition: transform .2s ease-in;
+    }
+
+    #nav-bar.mobile-active #menu{
+        transform: translateY(-11%);
+        visibility: visible;  
+    }
+}

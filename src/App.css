@@ -16,6 +16,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
     scroll-behavior: smooth; 
+    
 }
 
 /* Scroll */
@@ -24,7 +25,7 @@ body{
 }
   
 ::-webkit-scrollbar {
-    width: 10px;
+    width: .5rem;
     background: transparent;
 }
 
