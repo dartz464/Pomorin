@@ -28,7 +28,6 @@ function Header() {
             <h1 id='logo'>POMORIN</h1>
             <nav id='nav-bar' className={mobileActive ? 'mobile-active' : ''}>
                 <img src={menuImg} alt="" id='btn-mobile' onClick={ShowMobile}/>
-                {/* <button >Menu</button> */}
                 <ul id='menu'>
                     <li><a href="">Pomodoro</a></li>
                     <li><a href="">Sobre</a></li>

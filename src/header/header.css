@@ -87,6 +87,19 @@ li:hover{
 
     #nav-bar.mobile-active #menu{
         transform: translateY(-11%);
-        visibility: visible;  
+        opacity: 1;
+    }
+
+    #header.header-active #menu{
+        transform: translateY(-150%);
+    }
+    
+    li{
+        transition: opacity .6s ease-in-out;
+        opacity: 0;
+    }
+
+    #nav-bar.mobile-active li{
+        opacity: 1;
     }
 }
