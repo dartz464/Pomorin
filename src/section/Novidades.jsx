@@ -1,10 +1,10 @@
 import './section.css';
 
-function Sobre () {
+function Novidades () {
     return (
-        <section id='section-pomodoro'>
+        <section id='section-novidades'>
             <div className='div-ex'>
-                <h1>Sobre</h1>
+                <h1>Novidades</h1>
                 <p>Texto 2</p>
                 <p>Texto 3</p>
                 <p>Texto 4</p>
@@ -15,4 +15,4 @@ function Sobre () {
     )
 }
 
-export default Sobre
+export default Novidades

@@ -4,7 +4,7 @@ function Pomodoro () {
     return (
         <section id='section-pomodoro'>
             <div className='div-ex'>
-                <h1>Texto 1</h1>
+                <h1>Pomodoro</h1>
                 <p>Texto 2</p>
                 <p>Texto 3</p>
                 <p>Texto 4</p>
