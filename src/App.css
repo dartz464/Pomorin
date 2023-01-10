@@ -15,8 +15,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-decoration: none;
-    scroll-behavior: smooth; 
-    
+    scroll-behavior: smooth;  
+}
+
+html{
+    background-color: var(--emphasis-color);
 }
 
 /* Scroll */

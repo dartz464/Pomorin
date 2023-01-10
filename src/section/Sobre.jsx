@@ -2,7 +2,7 @@ import './section.css';
 
 function Sobre () {
     return (
-        <section id='section-pomodoro'>
+        <section id='section-sobre'>
             <div className='div-ex'>
                 <h1>Sobre</h1>
                 <p>Texto 2</p>
