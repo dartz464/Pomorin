@@ -1,0 +1,14 @@
+#section-pomodoro{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#container-timer{
+    width: 25%;
+}
+
+#container-buttons{
+    display: flex;
+    gap: 1rem;
+}
+

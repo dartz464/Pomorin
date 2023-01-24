@@ -1,16 +1,15 @@
 import './section.css';
+import Btn from '../components/buttons/Btn.jsx';
 
 function Novidades () {
     return (
         <section id='section-novidades'>
-            <div className='div-ex'>
-                <h1>Novidades</h1>
-                <p>Texto 2</p>
-                <p>Texto 3</p>
-                <p>Texto 4</p>
-                <p>Texto 5</p>
-                <span className='btn-ex'>Botão exemplo</span>
+            <div id='section-container-content'>
+                <div className="section-content">
+                    <h1>Novidades</h1>
+                </div>
             </div>
+
         </section>
     )
 }

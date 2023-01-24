@@ -1,0 +1,28 @@
+button{
+    background-color: var(--emphasis-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: var(--emphasis-word-color);
+}
+
+.btn-pomodoro{
+    /* width: auto; */
+    padding: 0;
+    /* color: var(--emphasis-word-color); */
+    display: flex;
+}
+.btn-pomodoro svg{
+    width: 4rem;
+}

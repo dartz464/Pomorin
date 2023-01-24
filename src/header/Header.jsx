@@ -8,7 +8,6 @@ function Header() {
     // Controlar header
     const [headerHide, setHeader] = useState(false);
     const prevScrollpos = window.pageYOffset;
-    console.log(prevScrollpos);
     const showHeader =() =>{
         const currentScrollPos = window.pageYOffset;
         if(currentScrollPos > prevScrollpos){

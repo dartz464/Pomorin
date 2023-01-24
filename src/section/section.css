@@ -12,12 +12,52 @@ section{
 }
 
 h1{
-    color: var(--empashis-word-color);
+    color: var(--emphasis-color);
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.btn-ex{
-    padding: 5px;
-    background-color: var(--emphasis-color);
-    color: white;
-    border-radius: 50px; 
+p{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Sobre */
+#section-container-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.section-content{
+    height: 90vh;
+    width: 45%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 10px 5px 5px black;
+}
+
+#section-novidades .section-content{
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    #section-sobre #section-container-content{
+        flex-direction: column;
+    }
+
+    #section-sobre .section-content{
+        height: 45vh;
+        width: 90%;
+    }
 }

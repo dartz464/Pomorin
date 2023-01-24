@@ -1,0 +1,34 @@
+#section-configuracao{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    color: var(--primary-color);
+
+}
+
+#container-configuracao{
+    min-height: 300px;
+    min-width: 600px;
+    background-color: #282c3480;
+    border: solid 4px;
+    border-radius: 5px;
+    border-color: var(--emphasis-word-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container-configuracao p{
+    color: var(--emphasis-word-color);
+}
+
+#container-configuracao button{
+    width: 30%;
+}
+
+.hide-configuracao{
+    display: none;
+}
